@@ -16,20 +16,30 @@
     --dark-text: #000000;
 }
 
+footer {
+    background-color: var(--dark-text);
+    color: var(--secondary-color);
+}
+nav {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
 
 .main {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    
 }
 
 /*PRESENTATION AUGUSTO*/
 .main__presentation {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 75vh;
     padding-bottom: 2rem;
-    object-fit: contain;
+    object-fit: cover;
+    background-image: url("src/images/fondo.png");
+    padding: 1rem;
 
 }
 
@@ -168,6 +178,72 @@ div.presentation__text {
 }
 
 /*PRODUCTOS*/
+
+.main__contact {
+    padding: 15px;
+}
+.container-form{
+    border:3px solid brown;
+    border-radius:22px;
+    background: #d3c05223;
+    
+  
+
+ }
+.container-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    text-align: center;
+    color: var(--main-color);
+}
+.container-form h3{
+    color: var(--dark-text);
+    font-size: 25px; 
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-align: justify;
+    justify-content: center;
+
+}
+.main__contact .container-form {
+    padding: 20px;
+}
+
+.container-form .campo1, .campo2, .campo3, .campo4, .container-form form textarea {
+    
+    width: 100%;
+    padding: 15px 10px; 
+    font-size: 20px; 
+    border: 1px solid var(--color-btn);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    outline: 0; 
+    color: #000000
+}
+    
+
+.container-form form textarea {
+    
+    min-width: 100%; 
+    min-height: 140px;
+    max-height: 300px; 
+}
+.container-form .btn-enviar {
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #ab4493; 
+    border-color: #ab4493; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 100%;   
+    cursor: pointer;
+    color: #fdfcdc;  
+}
 
 
 /* MEDIA QUERIES */
@@ -341,7 +417,7 @@ div.presentation__text {
 
 /*DIANA*/
 .main__about-me {
-    max-height: 80vh;
+    max-height: 110vh;
     padding: 5rem;
     grid-template-columns: 30% 70%;
     background-color: var(--secondary-color);
@@ -354,6 +430,7 @@ div.presentation__text {
 .about-me__container-text {
     background-color: var(--main-color);
     border-radius: 10px;
+    align-self: baseline;
 }
 
 .about-me__img {
@@ -364,17 +441,15 @@ div.presentation__text {
 /*DIANA*/
 
 /* RUDY */
-.main__contact {
-    padding: 15px;
+  .main__contact {
+     padding: 1rem 350px;
+    }
 }
 
 .container-form {
     border: 3px solid brown;
     border-radius: 22px;
     background: #d3c05223;
-
-
-
 }
 
 .container-form h2 {
@@ -439,4 +514,3 @@ div.presentation__text {
 }
 
 /*RUDY*/
-}
